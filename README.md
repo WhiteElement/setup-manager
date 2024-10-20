@@ -1,8 +1,6 @@
 # setup-manager
 * Kleines Setup Tool, welches beim Aufsetzen eines neuen Systems gestartet werden kann und initiale Software installiert und Configs eintraegt.
    22 setup manager                                                                                                                                                                           
-   21                                                                                                                                                                                         
-   20                                                                                                                                                                                         
    19 terminal                                                                                                                                                                                
    18 * i3                                                                                                                                                                                    
    17 * tmux                                                                                                                                                                                  
