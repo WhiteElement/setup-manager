@@ -1,19 +1,26 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"os"
 	"os/exec"
 )
 
 func main() {
 
+	// Install programs
 	programs := [4]string{"i3", "tmux", "git", "build-essential"}
 	for _, prog := range programs {
 		basisErr := installBasis(prog)
 		if basisErr != nil {
-			fmt.Printf("Error running command(%s)", basisErr.Error())
+			log.Printf("Error running command(%s)", basisErr.Error())
 		}
+	}
+
+	// Make ~/Dev
+	dirErr := os.Mkdir("/home/manu/Dev", 0777)
+	if dirErr != nil {
+		log.Printf("Error making dir(%s)", dirErr.Error())
 	}
 
 }
